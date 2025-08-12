@@ -1,0 +1,98 @@
+/* Admin Styles for Smart Wash */
+
+/* Layout for sticky footer */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* Footer styles */
+.footer {
+  margin-top: 2rem;
+  background-color: #343a40;
+  color: white;
+}
+
+.footer a {
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #fff !important;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Status badges */
+.status-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Price formatting */
+.price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #198754;
+}
+
+/* Admin dashboard specific styles */
+.dashboard-stat {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+
+.dashboard-stat:hover {
+  transform: translateY(-5px);
+}
+
+.dashboard-stat i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.dashboard-stat h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Form styling */
+.form-section {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.form-section:last-child {
+  border-bottom: none;
+}
+
+/* Table styling */
+.table-actions {
+  white-space: nowrap;
+} 

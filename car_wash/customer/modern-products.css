@@ -1,0 +1,424 @@
+/* Modern Products Page Styles */
+:root {
+  --primary-color: #4ca757;
+  --primary-dark: #3a8c43;
+  --primary-light: #e8f5e9;
+  --secondary-color: #2c3e50;
+  --accent-color: #f39c12;
+  --text-color: #333333;
+  --light-gray: #f5f5f5;
+  --medium-gray: #e0e0e0;
+  --white: #ffffff;
+  --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background: url('images/organic-cosmetic-product-with-dreamy-aesthetic-fresh-background.jpg') center/cover;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.7));
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.search-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-form .input-group {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.search-form input {
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 25px 0 0 25px !important;
+  padding: 15px 25px;
+  font-size: 1.1rem;
+}
+
+.search-form .btn {
+  border-radius: 0 25px 25px 0 !important;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+}
+
+/* Benefits Section */
+.benefits-section {
+  background-color: var(--light-gray);
+  padding: 4rem 0;
+}
+
+.benefit-card {
+  background-color: var(--white);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  height: 100%;
+  transition: var(--transition);
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-card i {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.benefit-card p {
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* Products Section */
+.product-section {
+  background-color: var(--white);
+  padding: 4rem 0;
+}
+
+.filters-sidebar {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.sidebar-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--medium-gray);
+}
+
+.filter-group {
+  margin-bottom: 2rem;
+}
+
+.filter-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+}
+
+.sort-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sort-option {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.sort-option:hover,
+.sort-option.active {
+  background-color: var(--primary-light);
+  color: var(--primary-color);
+}
+
+.sort-option i {
+  margin-right: 0.5rem;
+}
+
+/* Product Cards */
+.product-card {
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--accent-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.product-image {
+  position: relative;
+  overflow: hidden;
+  padding-top: 75%;
+}
+
+.product-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.1);
+}
+
+.product-info {
+  padding: 1.5rem;
+}
+
+.product-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.product-title a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.product-title a:hover {
+  color: var(--primary-color);
+}
+
+.product-price {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 0.5rem;
+}
+
+.current-price {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.product-description {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.product-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+  width: 100%;
+}
+
+.product-actions .btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 8px 15px;
+  white-space: nowrap;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-actions .btn i {
+  flex-shrink: 0;
+}
+
+@media (max-width: 350px) {
+  .product-actions {
+    flex-direction: column;
+  }
+}
+
+.product-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.product-info {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure the product description doesn't push buttons off screen */
+.product-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-height: 4.5em;
+}
+
+/* Animations */
+.add-to-cart.adding {
+  position: relative;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.add-to-cart.adding::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  margin: -10px 0 0 -10px;
+  border: 2px solid transparent;
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.add-to-cart.added {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 2rem;
+}
+
+.page-link {
+  color: var(--primary-color);
+  border: none;
+  margin: 0 0.2rem;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+}
+
+.page-link:hover {
+  background-color: var(--primary-light);
+  color: var(--primary-color);
+}
+
+.page-item.active .page-link {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* No Results */
+.no-results {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.no-results-icon i {
+  font-size: 4rem;
+  color: var(--medium-gray);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: 50vh;
+  }
+  
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  .filters-sidebar {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    height: 40vh;
+  }
+  
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+  
+  .product-card {
+    margin-bottom: 1.5rem;
+  }
+}
